@@ -2948,9 +2948,3 @@ $(function () {
     });
 });
 
-$(function(){
-    $('.nav-pills-custom').click(function(){
-       $('.heart-rate').hide();
-        $('.nav-pills-custom'+($(this).parent('a').index()+1)+'-svg').show(); 
-    });
-});
