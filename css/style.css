@@ -8653,8 +8653,6 @@
 
     /* Custom CSS */
 
-    /* Home Page */
-
     .mb-0 {
         margin-bottom: 0rem !important;
     }
@@ -8749,7 +8747,10 @@
     
     .pt-5 {
         padding-top: 3rem !important;
-    }  
+    } 
+
+    /* Home Page */
+ 
     
     .brands-tab {
         position: relative;
@@ -8865,120 +8866,129 @@
     .gallery a::after, .blogs a::after, .contact a::after {
         display: none !important;
     }
+
+    /* Product Slider */
+        
+    .widget img {
+        max-width: 30%;
+        width: 30%;
+        height: auto;
+        vertical-align: bottom;
+    }
+        
+    .widget {
+        position: relative;
+        margin: 0 auto;
+        max-width: 320px;
+        height: 875px;
+        background: linear-gradient(90deg, #FF0027 -3.49%, #6F011B 112.66%);
+    }
     
-    .hicon {
-        fill: transparent;
-        stroke: #ed1c24;
-        stroke-width: 20;
+    figure {
+        margin: 0;
+    }
+    
+    figure::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    
+    figure figcaption {
+        padding: 2.25em 2.5em 0;
+    }
+    
+    figure figcaption h3,
+    figure figcaption .tag {
+        font-family: "Playfair Display", serif;
+    }
+    
+    figure figcaption h3 {
+        margin: 0;
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    figure figcaption .tag {
+        display: block;
+        margin-top: 0.5em;
+        font-size: 0.9375em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+    
+    figure figcaption p {
+        margin: 2em 0;
+        font-size: 0.875em;
+        line-height: 1.375em;
+        color: #fff;
+    }
+    
+    figure figcaption .rating {
+        color: #d08946;
+    }
+    
+    figure figcaption .rating .fa {
+        margin-right: 5px;
+    }
+    
+    figure figcaption .rating .fa:last-child {
+        margin-right: 0;
+    }
+    
+    .slideshow-nav {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+        width: 100%;
+        height: 125px;
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/ricepaper2.png") repeat;
+        -webkit-box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+        box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .slideshow-nav #prev,
+    .slideshow-nav #next {
+        width: 50%;
+        height: 100%;
+        line-height: 125px;
+        text-align: center;
         cursor: pointer;
-        position: absolute;
-    }
-
-    .hicon svg {
-        overflow: visible;
-        width: 33rem;   
-    }
-
-    .hicon path {
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1550;
-        transform-origin: center;
+        color: #beaea0;
     }
     
-    .hicon .heart-main path {
-        animation: stroke-animation 5s ease-in-out forwards;
-    }
-
-    .hicon .heart-main .heart-background path {
-        animation: fade-animation 5s ease-in-out forwards;
+    .slideshow-nav #prev:hover, .slideshow-nav #prev:focus,
+    .slideshow-nav #next:hover,
+    .slideshow-nav #next:focus {
+        color: #a08872;
     }
     
-    @keyframes stroke-animation {
-        0% {
-            stroke-dashoffset: 0;
-        }
-
-        30% {
-            stroke-dashoffset: 1550;
-        }
-
-        60% {
-            stroke-dashoffset: 3100;
-            fill: transparent;
-            transform: scale(1);
-        }
-
-        80% {
-            fill: transparent;
-            transform: scale(1);
-        }
-
-        90% {
-            transform: scale(1);
-        }
-
-        100% {
-            stroke-dashoffset: 3100;
-            fill: transparent;
-        }
-    }
-
-    .fade-in-img {
-        animation: fadeIn ease 10s;
-        -webkit-animation: fadeIn ease 10s;
-        -moz-animation: fadeIn ease 10s;
-        -o-animation: fadeIn ease 10s;
-        -ms-animation: fadeIn ease 10s;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
+    .slideshow-nav #prev:active,
+    .slideshow-nav #next:active {
+        color: #856e5a;
     }
     
-    @-moz-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
     
-        100% {
-            opacity: 1;
-        }
+    .slideshow-nav #prev {
+        float: left;
+        border-right: 1px solid #beaea0;
     }
     
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
+    .slideshow-nav #next {
+        float: right;
     }
     
-    @-o-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-ms-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
+    .slideshow-nav #thumbnails {
+        display: none;
     }
 
     /* Mission & Vision Page */
