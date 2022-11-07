@@ -2947,3 +2947,18 @@ $(function () {
 
     });
 });
+
+$(document).ready(function ($) {
+    $('.gallery').magnificPopup({
+        type: 'video',
+
+        // To invoke the popup
+        // using the 'a' tag
+        delegate: 'a',
+
+        // Enable the gallery
+        gallery: {
+            enabled: true
+        }
+    });
+});

@@ -1712,7 +1712,7 @@
 
 @media only screen and (min-width: 815px) {
 	figure figcaption {
-		float: left;
+		float: right;
 		width: 55%;
 	}
 }

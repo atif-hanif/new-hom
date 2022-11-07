@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/settings.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -394,20 +396,8 @@
 		</section>
 		<!-- End Brands -->
 
-		<!-- Start New Product -->
-		<div class="mad-section no-pd">
-			
-			<div class="mad-section--stretched mad-colorizer--scheme-color-5">
-				<div class="mad-title-wrap align-center">
-					<h2 class="mad-page-title">Our New Product</h2>
-				</div>
-				
-				<img src="images/new-product.png" alt="New Product" class="img-fluid">
-			</div>
-		</div>
-		<!-- End New Product -->
-
-		<div class="mad-section brands-tab">
+		<!-- Start Products -->
+		<div class="mad-section brands-tab no-pd">
 			<div class='container'>
 				<div class='widget'>
 					<div class='cycle-slideshow' data-cycle-allow-wrap='true' data-cycle-fx='carousel' data-cycle-next='#next' data-cycle-pager-template="&lt;a href='#' class='thumb'&gt;&lt;img src='{{children.0.src}}'&gt;&lt;/a&gt;" data-cycle-pager='#thumbnails' data-cycle-prev='#prev' data-cycle-slides='figure' data-cycle-timeout='0'>
@@ -415,56 +405,63 @@
 							<img alt='A Taste of the Kitchen' src='images/habib-cooking-oil.png'>
 							<figcaption>
 								<h3>Habib Cooking Oil</h3>
-								<p>Possimus deserunt nisi perferendis, consequuntur odio et aperiam, est, dicta dolor itaque sunt laborum, magni qui optio.</p>
+								<p>Kyun Ke Ye Dil Ka Maamla Hai.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Rustic Reds' src='images/habib-banaspati.png'>
 							<figcaption>
 								<h3>Habib Banaspati</h3>
-								<p>Totam at eius excepturi deleniti sed, error repellat itaque omnis maiores tempora ratione dolor velit minus porro aspernatur repudiandae.</p>
+								<p>Be-dharak Jeenay Walon Ke Liye.</p>
+							</figcaption>
+						</figure>
+						<figure>
+							<img alt='Delicious Desserts' src='images/super-habib-cooking-oil.png'>
+							<figcaption>
+								<h3>Super Habib Cooking Oil</h3>
+								<p>Pure Look of Health.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/handi-cooking-oil.png'>
 							<figcaption>
 								<h3>Handi Cooking Oil</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>VHandi Khuli Tou Ghar Mehak Utha.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/handi-banaspati.png'>
 							<figcaption>
 								<h3>Handi Banaspati</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>Handi Khuli Tou Ghar Mehak Utha.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/nayab-cooking-oil.png'>
 							<figcaption>
 								<h3>Nayab Cooking Oil</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>Dekha Bhaala.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/nayab-banaspati.png'>
 							<figcaption>
 								<h3>Nayab Banaspati</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>Dekha Bhaala.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/mayar-cooking-oil.png'>
 							<figcaption>
 								<h3>Mayar Cooking Oil</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>A Frying Medium of Int'l Standards.</p>
 							</figcaption>
 						</figure>
 						<figure>
 							<img alt='Delicious Desserts' src='images/mayar-banaspati.png'>
 							<figcaption>
 								<h3>Mayar Banaspati</h3>
-								<p>Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendis quae repellat, modi non, veniam.</p>
+								<p>A Frying Medium of Int'l Standards.</p>
 							</figcaption>
 						</figure>
 					</div>
@@ -476,130 +473,11 @@
 				</div>
 			</div>
 		</div>
+		<!-- End Products -->
 
-		<!-- Start Brands Tabs -->
-		<!-- <div class="mad-section brands-tab">
-			<div class="container">
-				<h3 class="mb-0">Our <span class="red">Product Range</span></h3>
-				<p>HOM Oil offers a complete range of premium quality cooking oils and Banaspati with the mission to provide its customers with a wholesome and flavorful life.</p>
-				<div class="mad-tabs mad-tabs--tour-sections">
-					<div role="tablist" aria-label="Tour Sections v1" class="mad-tabs-nav">
-						<span class="mad-active">
-							<a id="tab-1-link" href="#tab-1" role="tab" aria-selected="false" aria-controls="tab-1" class="mad-tab-link">Habib Cooking Oil</a>
-						</span>
-						<span>
-							<a id="tab-2-link" href="#tab-2" role="tab" aria-selected="true" aria-controls="tab-2" class="mad-tab-link">Habib Banaspati</a>
-						</span>
-						<span>
-							<a id="tab-3-link" href="#tab-3" role="tab" aria-selected="false" aria-controls="tab-3" class="mad-tab-link">Handi Cooking Oil</a>
-						</span>
-						<span>
-							<a id="tab-4-link" href="#tab-4" role="tab" aria-selected="false" aria-controls="tab-4" class="mad-tab-link">Handi Banaspati</a>
-						</span>
-						<span>
-							<a id="tab-5-link" href="#tab-5" role="tab" aria-selected="true" aria-controls="tab-5" class="mad-tab-link">Nayab Cooking Oil</a>
-						</span>
-						<span>
-							<a id="tab-6-link" href="#tab-6" role="tab" aria-selected="false" aria-controls="tab-6" class="mad-tab-link">Nayab Banaspati</a>
-						</span>
-						<span>
-							<a id="tab-7-link" href="#tab-7" role="tab" aria-selected="false" aria-controls="tab-7" class="mad-tab-link">Mayar Cooking Oil</a>
-						</span>
-						<span>
-							<a id="tab-5-link" href="#tab-5" role="tab" aria-selected="true" aria-controls="tab-5" class="mad-tab-link">Mayar Banaspati</a>
-						</span>
-						<a class="btn btn-big btn-style-3 mt-3 text-white" href="#">Buy Now</a>
-					</div>
-					<div class="mad-tabs-container">
-						<div id="tab-1" tabindex="0" role="tabpanel" aria-labelledby="tab-1-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/habib-cooking-oil.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-2" tabindex="0" role="tabpanel" aria-labelledby="tab-2-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/handi-banaspati.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-3" tabindex="0" role="tabpanel" aria-labelledby="tab-3-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/handi-cooking-oil.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-4" tabindex="0" role="tabpanel" aria-labelledby="tab-4-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/handi-banaspati.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-5" tabindex="0" role="tabpanel" aria-labelledby="tab-5-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/nayab-cooking-oil.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-6" tabindex="0" role="tabpanel" aria-labelledby="tab-6-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/nayab-banaspati.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-7" tabindex="0" role="tabpanel" aria-labelledby="tab-7-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/mayar-cooking-oil.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-						<div id="tab-8" tabindex="0" role="tabpanel" aria-labelledby="tab-8-link" class="mad-tab">
-							<div class="hicon">
-								<svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-								  <path d="M462.3 62.6C407.5 16.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-								</svg>
-							</div>
-							<div class="fade-in-img">
-								<img src="images/mayar-banaspati.png" alt="Heart" class="img-fluid front-img">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- End Brands Tabs -->
-
+		<!-- Start About -->
 		<section class="mad-content no-pd">
             <div class="container">
-				<!-- Start About -->
 				<div class="mad-section about">
 					<div class="mad-entities type-2">
 						<article class="mad-entity">
@@ -614,9 +492,13 @@
 						</article>
 					</div>
 				</div>
-				<!-- End About -->
+			</div>
+		</section>
+		<!-- End About -->
 
-				<!-- Start Banners -->
+		<!-- Start Banners -->
+		<section class="mad-content no-pd">
+			<div class="container">
 				<div class="mad-section no-pd mad-section--stretched-content">
 					<div class="mad-banners">
 						<div class="row">
@@ -669,9 +551,13 @@
 						</div>
 					</div>
 				</div>
-				<!-- End Banners -->
+			</div>
+		</section>
+		<!-- End Banners -->
 
-				<!-- Start Products -->
+		<!-- Start Products -->
+		<section class="mad-content no-pd">
+			<div class="container">
 				<div class="mad-section">
 					<h2 class="mad-page-title align-center">Discover Our Products</h2>
 					<div class="mad-tabs">
@@ -902,24 +788,23 @@
 			<div class="mad-half-section">
 				<div class="mad-col">
 					<div class="mad-half-section-item" data-bg-image-src="images/cake.png">
-						<!-- <div class="mad-half-content">
+						<div class="mad-half-content">
 							<div class="content-element-6">
-								<h2 class="mad-page-title">Create Your
-							  Own Pizza</h2>
-								<p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.</p>
-							</div> <a href="#" class="btn btn-style-3 btn-big">Add Toppings</a>
-						</div> -->
+								<h2 class="mad-page-title">Make Your Own Chocolate Cake</h2>
+								<!-- <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.</p> -->
+							</div>
+							<a href="#" class="btn btn-style-3 btn-big">Get The Recipe Here</a>
+						</div>
 					</div>
 				</div>
 				<div class="mad-col">
 					<div class="mad-half-section-item" data-bg-image-src="images/beans.png">
-						<!-- <div class="mad-half-content">
+						<div class="mad-half-content">
 							<div class="content-element-6">
-								<h2 class="mad-page-title">Create Your
-							  Own Burger</h2>
-								<p>Aenean nec eros. Vestibulum ante ipsum primis in faucibus.</p>
-							</div> <a href="#" class="btn btn-style-3 btn-big">Add Toppings</a>
-						</div> -->
+								<h2 class="mad-page-title">Benefits of Edamame Beans</h2>
+								<!-- <p>Aenean nec eros. Vestibulum ante ipsum primis in faucibus.</p> -->
+							</div> <a href="#" class="btn btn-style-3 btn-big">Get More Info</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -951,9 +836,103 @@
 		</div>
 		<!-- End Parallex -->
 
-		<div class="mad-section">	
+		<!-- Start Blogs -->
+		<section class="mad-content no-pd">	
 			<div class="container">
-				<!-- Start Testimonial -->
+				<div class="mad-section mad-section--stretched mad-colorizer--scheme-color-5">
+					<h2 class="mad-page-title align-center">Latest News</h2>
+					<div class="mad-entities item-col-3 type-3">
+						<div class="mad-col">
+							<article class="mad-entity">
+								<div class="mad-entity-media">
+									<a href="#"><img src="images/1.jpg" alt=""></a>
+								</div>
+								<div class="mad-entity-body">
+									<div class="mad-entity-content">
+										<div class="mad-entity-tags"> <span>September 28, 2021</span> <span class="mad-in">News</span> </div>
+										<h5 class="mad-entity-title"><a href="#" class="mad-link">Karachi Eat Festival 2019</a></h5>
+										<p>This time Habib Oil Mills participated in the most anticipated food festival of the year. Karachi Eat Festival was back again this year this time at Beach View Park, Clifton. The festival started on Friday, 13th January 2019 with an expected crowd of more.</p>
+										<div class="mad-entity-footer"> <a href="#" class="mad-read-more size-2">Read More</a>
+											<div class="mad-share-wrap">
+												<div class="mad-social-icons size-small style-2">
+													<ul>
+														<li><a href="#" class="mad-popup-open"><i class="material-icons">share</i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="mad-col">
+							<article class="mad-entity">
+								<div class="mad-entity-media">
+									<a href="#"><img src="images/2.jpg" alt=""></a>
+								</div>
+								<div class="mad-entity-body">
+									<div class="mad-entity-content">
+										<div class="mad-entity-tags"> <span>September 28, 2021</span> <span class="mad-in">News</span> </div>
+										<h5 class="mad-entity-title"><a href="#" class="mad-link">Trade Gathering KHI</a></h5>
+										<p>To celebrate the achievements of the Trade Activity – Inamaat Ki Bharmaar, which was run Nationwide by Habib Oil Mills, a trade gathering was held in Pavilion End Club, Karachi on 26th October 2018 to recognize the efforts of traders in Karachi & Hyderabad. The.</p>
+										<div class="mad-entity-footer"> <a href="#" class="mad-read-more size-2">Read More</a>
+											<div class="mad-share-wrap">
+												<div class="mad-social-icons size-small style-2">
+													<ul>
+														<li><a href="#" class="mad-popup-open"><i class="material-icons">share</i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="mad-col">
+							<article class="mad-entity">
+								<div class="mad-entity-media">
+									<a href="#"><img src="images/3.jpg" alt=""></a>
+								</div>
+								<div class="mad-entity-body">
+									<div class="mad-entity-content">
+										<div class="mad-entity-tags"> <span>September 28, 2021</span> <span class="mad-in">News</span> </div>
+										<h5 class="mad-entity-title"><a href="#" class="mad-link">Trade Gathering ISB/RWP</a></h5>
+										<p>To celebrate the success of the Trade Activity – Inamaat Ki Bharmaar – run successfully nationwide by HOM, a gathering for the traders of Islamabad, Rawalpindi, Peshawar and adjacent towns was organized at Royalton Hotel Rawalpindi on 23rd October 2018. Traders from all over Islamabad.</p>
+										<div class="mad-entity-footer"> <a href="#" class="mad-read-more size-2">Read More</a>
+											<div class="mad-share-wrap">
+												<div class="mad-social-icons size-small style-2">
+													<ul>
+														<li><a href="#" class="mad-popup-open"><i class="material-icons">share</i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Blogs -->
+
+		<!-- Start New Product -->
+		<div class="mad-section no-pd">
+					
+			<div class="mad-section--stretched mad-colorizer--scheme-color-5">
+				<div class="mad-title-wrap align-center">
+					<h2 class="mad-page-title">Our New Product</h2>
+				</div>
+				
+				<img src="images/new-product.png" alt="New Product" class="img-fluid">
+			</div>
+		</div>
+		<!-- End New Product -->
+
+		<!-- Start Testimonial -->
+		<section class="mad-content no-pd">	
+			<div class="container">
 				<div class="mad-section">
 					<div class="mad-testimonials type-2 with-img mad-reverse">
 						<div class="mad-col">
@@ -1017,26 +996,44 @@
 						</div>
 					</div>
 				</div>
-				<!-- End Testimonial -->
+			</div>
+		</section>
+		<!-- End Testimonial -->
 
-				<div class="mad-section no-pd mad-section--stretched-content-no-px">
-					<div class="mad-instafeed">
-						<div class="mad-grid item-col-4 no-gutters">
-							<div class="mad-col">
-								<a href="#"><img src="images/480x480_img1.jpg" alt=""></a>
-							</div>
-							<div class="mad-col">
-								<a href="#"><img src="images/480x480_img2.jpg" alt=""></a>
-							</div>
-							<div class="mad-col">
-								<a href="#"><img src="images/480x480_img3.jpg" alt=""></a>
-							</div>
-							<div class="mad-col">
-								<a href="#"><img src="images/480x480_img4.jpg" alt=""></a>
-							</div>
-						</div>
+		<!-- Start TVC -->
+		<section class="mad-content no-pd">	
+			<div class="container">
+				<div class="mad-section">
+					<div class="carousel"></div>
+				</div>
+			</div>
+		</section>
+		<!-- End TVC -->
+
+		<!-- Start Gallery -->
+		<div class="mad-section no-pd mad-section--stretched-content-no-px">
+			<div class="mad-instafeed">
+				<div class="mad-grid item-col-4 no-gutters">
+					<div class="mad-col">
+						<a href="#"><img src="images/480x480_img1.jpg" alt=""></a>
+					</div>
+					<div class="mad-col">
+						<a href="#"><img src="images/480x480_img2.jpg" alt=""></a>
+					</div>
+					<div class="mad-col">
+						<a href="#"><img src="images/480x480_img3.jpg" alt=""></a>
+					</div>
+					<div class="mad-col">
+						<a href="#"><img src="images/480x480_img4.jpg" alt=""></a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<!-- End Gallery -->
+				
+		<!-- Start Testimonial -->
+		<section class="mad-content no-pd">	
+			<div class="container">
 				<div class="mad-section">
 					<h2 class="mad-page-title">We Are in the News</h2>
 					<!-- Partners -->
@@ -1135,7 +1132,7 @@
 					<!-- End Of Partners -->
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="mad-banners with-slide-down">
 			<div class="container">
 				<div class="row">
@@ -1272,7 +1269,9 @@
 	<script src="js/modules/mad.newsletter-form.min.js"></script>
 	<script src="js/modules/mad.sticky-header-section.min.js"></script>
 	<script src="js/mad.app.js"></script>
-	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/cycle2.js"></script>
+	<script src="js/cycle2.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 </body>
 
 </html>

@@ -8843,6 +8843,10 @@
     .red {
         color: #ed1c24;
     }
+
+    .mad-product-title {
+        margin: 15px 0px;
+    }
     
     .background-section {
         background-image: url(../images/background.jpg);
@@ -8874,6 +8878,7 @@
         width: 30%;
         height: auto;
         vertical-align: bottom;
+        margin-left: 30px;
     }
         
     .widget {
@@ -8886,6 +8891,10 @@
     
     figure {
         margin: 0;
+    }
+
+    figure.cycle-slide {
+        width: 100%;
     }
     
     figure::after {
