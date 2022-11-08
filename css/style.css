@@ -6456,7 +6456,7 @@
     .owl-carousel .owl-nav button span {
         line-height: inherit;
         font-size: inherit;
-        transform: rotate(105deg);
+        /* transform: rotate(105deg); */
     }
     
     .owl-carousel .owl-nav button svg {
@@ -9344,57 +9344,168 @@
         border-top: 2px solid #eb0029;
     }
 
+    /* New Product */
+
+    .productFeatures1 { grid-area: topLeft; }
+    .productFeatures2 { grid-area: topRight; }
+    .productImg { grid-area: productImg; }
+    .productFeatures3 { grid-area: bottomLeft; }
+    .productFeatures4 { grid-area: bottomRight; }
 
 
 
-/*our new product*/
+    .new-product{
+        background-image: url(../images/new-product.png);
+        background-size: cover;
 
+        display: grid;
+        grid-template-areas:
+        'topLeft productImg   topRight'
+        'topLeft   productImg   topRight'
+        'bottomLeft   productImg   bottomRight'
+        'bottomLeft productImg   bottomRight ';
+        gap: 50px 1px;
+        background-color: #2196F3;
+        padding: 50px;
+    }
 
-.productFeatures1 { grid-area: topLeft; }
-.productFeatures2 { grid-area: topRight; }
-.productImg { grid-area: productImg; }
-.productFeatures3 { grid-area: bottomLeft; }
-.productFeatures4 { grid-area: bottomRight; }
+    .productImg{
+        height: 100%;
+        width: 100%;
+    }
 
+    .productFeatures1{
+        margin-left:30%;
+    }
 
+    .productFeatures2{
+        margin-left: -30%;
+    }
 
-.new-product{
-    background-image: url(../images/new-product.png);
-    background-size: cover;
+    .productFeatures3{
+        margin-top: 20%;
+        margin-left: 30%;
+    }
 
-    display: grid;
-    grid-template-areas:
-      'topLeft productImg   topRight'
-      'topLeft   productImg   topRight'
-      'bottomLeft   productImg   bottomRight'
-      'bottomLeft productImg   bottomRight ';
-    gap: 50px 1px;
-    background-color: #2196F3;
-    padding: 50px;
+    .productFeatures4{
+        margin-top: 20%;
+        margin-left: -30%;
+    }
 
-}
+    /* Brand Page */
 
+    #myVerticalCarousel {
+        height: 100%;
+        margin: 0;
+    }
 
+    .item {
+        text-align: center;
+    }
 
-.productImg{
-    height: 100%;
-    width: 100%;
-}
+    #a {
+        background-image: radial-gradient(#ff0027, #6f011b);
+    }
 
-.productFeatures1{
-    margin-left:30%;
-}
+    #b {
+        background: #656D77;
+    }
 
-.productFeatures2{
-    margin-left: -30%;
-}
+    #c {
+        background: red;
+    }
 
-.productFeatures3{
-    margin-top: 20%;
-    margin-left: 30%;
-}
+    .main-slider {
+        width: 100%;
+    }
+    
+    /* .main-slider .owl-stage {
+        background-color: rgba(30, 144, 255, 0.8);
+    } */
+    
+    .main-slider .owl-item {
+        padding: 0;
+        position: relative;
+        opacity: 0.5;
+    }
+    
+    .main-slider .owl-item img {
+        object-fit: cover;
+        object-position: center;
+        /* height: 300px; */
+    }
+    
+    .main-slider .center {
+        opacity: 1;
+        transform: scale(1.005);
+        transition: 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    
+    .main-slider .owl-controls .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .main-slider .owl-controls .owl-nav .prev {
+        position: absolute;
+        height: 80%;
+        width: 15%;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-slider .owl-controls .owl-nav .next {
+        position: absolute;
+        height: 80%;
+        width: 15%;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-slider .owl-thumbs {
+        text-align: center;
+        display: table;
+        width: 100%;
+    }
+    
+    .main-slider .owl-thumb-item {
+        width: 20%;
+        height: 150px;
+        border: none;
+        background: none;
+        padding: 0;
+        opacity: 0.7;
+        overflow: hidden;
+    }
+    
+    .main-slider .owl-thumb-item img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    
+    .main-slider .owl-thumb-item.active {
+        opacity: 1;
+    }
+    
+    .main-slider .owl-thumb-item.active img {
+        position: relative;
+    }
+    
+    .overlay {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: black;
+    }
 
-.productFeatures4{
-    margin-top: 20%;
-    margin-left: -30%;
-}
+    .main-slider .owl-dots {
+        display: none;
+    }
