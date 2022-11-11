@@ -1759,13 +1759,13 @@
 @media only screen and (min-width: 815px) {
 	.slideshow-nav #prev {
 		border-right: 0;
-		margin-left: 2em;
+		margin-left: 1em;
 	}
 }
 
 @media only screen and (min-width: 815px) {
 	.slideshow-nav #next {
-		margin-right: 2em;
+		margin-right: 1em;
 	}
 }
 
@@ -1791,5 +1791,19 @@
 
 	.slideshow-nav #thumbnails .cycle-pager-active img {
 		border: 3px solid #d3c8be;
+	}
+}
+
+@media (max-width: 624px) {
+	body {
+		margin: 15px;
+	}
+
+	.caption {
+		margin-top: 40px;
+	}
+
+	.vid-list-container {
+		padding-bottom: 20px;
 	}
 }
