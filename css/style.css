@@ -9379,22 +9379,22 @@
         width: 100%;
     }
 
-    .productFeatures1{
-        margin-left:30%;
+    .productFeatures1 {
+        margin-left: 0%;
     }
 
-    .productFeatures2{
-        margin-left: -30%;
+    .productFeatures2 {
+        margin-left: 00%;
     }
 
-    .productFeatures3{
+    .productFeatures3 {
         margin-top: 20%;
-        margin-left: 30%;
+        margin-left: 0%;
     }
 
-    .productFeatures4{
+    .productFeatures4 {
         margin-top: 20%;
-        margin-left: -30%;
+        margin-left: 0%;
     }
 
     /* Brand Page */
@@ -9488,7 +9488,7 @@
         height: 150px;
         border: none;
         background: none;
-        padding: 0;
+        padding: 0px 10px;
         opacity: 0.7;
         overflow: hidden;
     }
